@@ -72,11 +72,8 @@ class Form extends Component {
     );
   }
 }
-
-Form.protoType = {
-  name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
-  id: PropTypes.array.isRequired,
+Form.protoTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default Form;
